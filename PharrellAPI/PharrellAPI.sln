@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharrellAPI", "PharrellAPI\PharrellAPI.csproj", "{3E0F4AA5-3CB7-475F-B58C-E6772898D146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialData", "SocialData\SocialData.csproj", "{3F59D83B-F14C-4EDA-AD70-3A5C93485B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localiser", "Localiser\Localiser.csproj", "{2261AB78-462C-4724-87B4-3BCC39225618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappinessIndex", "HappinessIndex\HappinessIndex.csproj", "{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E0F4AA5-3CB7-475F-B58C-E6772898D146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0F4AA5-3CB7-475F-B58C-E6772898D146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0F4AA5-3CB7-475F-B58C-E6772898D146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0F4AA5-3CB7-475F-B58C-E6772898D146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F59D83B-F14C-4EDA-AD70-3A5C93485B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F59D83B-F14C-4EDA-AD70-3A5C93485B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F59D83B-F14C-4EDA-AD70-3A5C93485B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F59D83B-F14C-4EDA-AD70-3A5C93485B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2261AB78-462C-4724-87B4-3BCC39225618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2261AB78-462C-4724-87B4-3BCC39225618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2261AB78-462C-4724-87B4-3BCC39225618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2261AB78-462C-4724-87B4-3BCC39225618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
