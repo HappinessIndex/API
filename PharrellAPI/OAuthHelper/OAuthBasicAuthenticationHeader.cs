@@ -16,9 +16,9 @@ namespace OAuthHelper
 
         public string GetEncodedHeader()
         {
-            string consumer = $"{_apiKey}:{_apiSecret}";
+            string consumer = string.Format("{0}:{1}", _apiKey, _apiSecret);
             string encodedAuth = Convert.ToBase64String(Encoding.UTF8.GetBytes(consumer));
-            return $"Basic {encodedAuth}";
+            return string.Format("Basic {0}", encodedAuth);
         }
     }
 }
