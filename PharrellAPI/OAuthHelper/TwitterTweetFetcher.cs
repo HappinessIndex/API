@@ -21,11 +21,11 @@ namespace OAuthHelper
             {
                 client.BaseAddress = new Uri("https://api.twitter.com");
                 client.DefaultRequestHeaders.Clear();
-                client.DefaultRequestHeaders.Add("Authorization", $"{token.token_type} {token.access_token}");
+                client.DefaultRequestHeaders.Add("Authorization", string.Format("{0} {1}", token.token_type, token.access_token));
                 HttpResponseMessage getResponse =
                     await
-                        client.GetAsync(
-                            $"1.1/search/tweets.json?q=&geocode={longtitude},{latitude},{radius}km&result_type={resultType}&count={count}");
+                        client.GetAsync(string.Format(
+                            "1.1/search/tweets.json?q=&geocode={0},{1},{2}km&result_type={3}&count={4}", longtitude, latitude, radius, resultType, count));
 
                 if (getResponse.IsSuccessStatusCode)
                 {
