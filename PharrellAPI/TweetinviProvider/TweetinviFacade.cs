@@ -23,16 +23,20 @@ namespace TweetinviProvider
             var searchParameter = Search.CreateTweetSearchParameter("");
             searchParameter.SetGeoCode(174.77624,-41.28646, 35, DistanceMeasure.Kilometers);
             searchParameter.Lang = Language.English;
-            searchParameter.MaximumNumberOfResults = 5;
+            searchParameter.MaximumNumberOfResults = 2000;
+            //searchParameter.MaxId = maxTweetID + 1;
+            //searchParameter.SinceId = maxTweetID;
             var tweets = Search.SearchTweets(searchParameter);
-            
+
             IEnumerable<Tweet> allTweets = tweets.Select(tweet => new Tweet()
             {
                 Content = tweet.Text,
                 UserName = tweet.Creator.ScreenName,
                 Lat = tweet.Coordinates.Latitude,
-                Long = tweet.Coordinates.Longitude
+                Long = tweet.Coordinates.Longitude,
+                TweetID = tweet.Id
             });
+            
             return allTweets;
         }
     }

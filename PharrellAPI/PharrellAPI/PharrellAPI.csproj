@@ -194,6 +194,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HappinessController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -202,6 +203,10 @@
     <Compile Include="Migrations\201505270336422_tweet_Init.cs" />
     <Compile Include="Migrations\201505270336422_tweet_Init.Designer.cs">
       <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505270432313_Added_TweetID.cs" />
+    <Compile Include="Migrations\201505270432313_Added_TweetID.Designer.cs">
+      <DependentUpon>201505270432313_Added_TweetID.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\StoreTweets.cs" />
@@ -241,6 +246,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201505270336422_tweet_Init.resx">
       <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505270432313_Added_TweetID.resx">
+      <DependentUpon>201505270432313_Added_TweetID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
