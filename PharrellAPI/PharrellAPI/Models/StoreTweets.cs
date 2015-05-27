@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Tweetinvi;
+using TweetinviProvider;
 
 namespace PharrellAPI.Models
 {
-    public class storeTweets
+    public class StoreTweets
     {
-     //var credentials = TwitterCredentials.CreateCredentials("Access_Token", "Access_Token_Secret", "Consumer_Key", "Consumer_Secret");
-     //   credentials.
-    //TwitterCredentials.ExecuteOperationWithCredentials(credentials, () =>
-    //{
-    //Tweet.PublishTweet("myTweet");
-    //    var user = User.GetUserFromScreenName("iaink23");
-    //});
-        //TwitterCredentials.
-           
+        public void SaveTweetsToDb()
+        {
+            var db = new HiDbContext();
+            TweetinviFacade tweetFacade = new TweetinviFacade();
+            var allTweets = tweetFacade.GetTweets();
+            db.Tweets.AddRange(allTweets);
+            db.SaveChanges();
+        }
+
+        
+        
     }
     
 }

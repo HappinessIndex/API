@@ -204,7 +204,7 @@
       <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Tweet.cs" />
+    <Compile Include="Models\StoreTweets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +232,10 @@
     <ProjectReference Include="..\OAuthHelper\OAuthHelper.csproj">
       <Project>{2bb58c3b-152b-4ae5-85c6-d8db5943e61d}</Project>
       <Name>OAuthHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TweetinviProvider\TweetinviProvider.csproj">
+      <Project>{60c2299e-c792-45ff-9e03-8b76814099c7}</Project>
+      <Name>TweetinviProvider</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
