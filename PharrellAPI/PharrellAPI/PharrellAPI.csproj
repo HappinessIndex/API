@@ -199,6 +199,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HiDbContext.cs" />
+    <Compile Include="Migrations\201505270336422_tweet_Init.cs" />
+    <Compile Include="Migrations\201505270336422_tweet_Init.Designer.cs">
+      <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Tweet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -220,10 +225,19 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
+      <Project>{882FE910-6A39-4153-947D-8853B9C7C6C4}</Project>
+      <Name>InterfacesAndPOCOs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OAuthHelper\OAuthHelper.csproj">
       <Project>{2bb58c3b-152b-4ae5-85c6-d8db5943e61d}</Project>
       <Name>OAuthHelper</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505270336422_tweet_Init.resx">
+      <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

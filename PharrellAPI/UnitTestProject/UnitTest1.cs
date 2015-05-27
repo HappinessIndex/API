@@ -14,7 +14,7 @@ namespace UnitTestProject
             //arrange 
             TweetinviFacade tweetFacade = new TweetinviFacade();
             //act
-            tweetFacade.GetATweet();
+            tweetFacade.GetTweets();
 
             //assert
         }

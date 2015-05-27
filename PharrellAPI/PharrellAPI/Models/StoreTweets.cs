@@ -6,7 +6,7 @@ using Tweetinvi;
 
 namespace PharrellAPI.Models
 {
-    public class Tweet
+    public class storeTweets
     {
      //var credentials = TwitterCredentials.CreateCredentials("Access_Token", "Access_Token_Secret", "Consumer_Key", "Consumer_Secret");
      //   credentials.

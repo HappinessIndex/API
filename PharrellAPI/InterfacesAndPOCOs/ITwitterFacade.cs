@@ -1,7 +1,9 @@
-﻿namespace InterfacesAndPOCOs
+﻿using System.Collections.Generic;
+
+namespace InterfacesAndPOCOs
 {
     public interface ITwitterFacade
     {
-        Tweet GetATweet();
+        IEnumerable<Tweet> GetTweets();
     }
 }
