@@ -220,10 +220,15 @@
     <Compile Include="Migrations\201505280421064_SentimentValue.Designer.cs">
       <DependentUpon>201505280421064_SentimentValue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505280915380_region-has-many-sentiments.cs" />
+    <Compile Include="Migrations\201505280915380_region-has-many-sentiments.Designer.cs">
+      <DependentUpon>201505280915380_region-has-many-sentiments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SentimentStuff.cs" />
     <Compile Include="Models\StoreTweets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Region.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -265,14 +270,6 @@
       <Project>{882FE910-6A39-4153-947D-8853B9C7C6C4}</Project>
       <Name>InterfacesAndPOCOs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OAuthHelper\OAuthHelper.csproj">
-      <Project>{2bb58c3b-152b-4ae5-85c6-d8db5943e61d}</Project>
-      <Name>OAuthHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RegionLoader\RegionLoader.csproj">
-      <Project>{432839a2-fc65-471d-aceb-3faf80e000f5}</Project>
-      <Name>RegionLoader</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TweetinviProvider\TweetinviProvider.csproj">
       <Project>{60c2299e-c792-45ff-9e03-8b76814099c7}</Project>
       <Name>TweetinviProvider</Name>
@@ -287,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505280421064_SentimentValue.resx">
       <DependentUpon>201505280421064_SentimentValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505280915380_region-has-many-sentiments.resx">
+      <DependentUpon>201505280915380_region-has-many-sentiments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

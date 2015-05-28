@@ -1,6 +1,9 @@
+using PharrellAPI.Models;
+
 namespace RegionLoader
 {
     using System.Data.Entity;
+    using PharrellAPI;
 
     public class RegionDbContext : DbContext
     {

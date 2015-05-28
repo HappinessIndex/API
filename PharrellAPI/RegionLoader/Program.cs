@@ -4,6 +4,7 @@ using System.Data.SqlTypes;
 using System.IO;
 using CsvHelper;
 using Microsoft.SqlServer.Types;
+using PharrellAPI.Models;
 using SqlServerTypes;
 
 namespace RegionLoader

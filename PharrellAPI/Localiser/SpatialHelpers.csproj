@@ -79,6 +79,10 @@
     <Content Include="SqlServerTypes\readme.htm" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PharrellAPI\PharrellAPI.csproj">
+      <Project>{3e0f4aa5-3cb7-475f-b58c-e6772898d146}</Project>
+      <Name>PharrellAPI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RegionLoader\RegionLoader.csproj">
       <Project>{432839a2-fc65-471d-aceb-3faf80e000f5}</Project>
       <Name>RegionLoader</Name>

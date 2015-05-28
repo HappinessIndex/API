@@ -1,6 +1,7 @@
 ﻿using System.Data.SqlTypes;
 using Microsoft.SqlServer.Types;
-using RegionLoader;
+using PharrellAPI;
+using PharrellAPI.Models;
 
 namespace SpatialHelpers
 {

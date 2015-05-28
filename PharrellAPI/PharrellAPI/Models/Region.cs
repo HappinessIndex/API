@@ -1,6 +1,7 @@
+using System.Collections.Generic;
 using System.Data.Entity.Spatial;
 
-namespace RegionLoader
+namespace PharrellAPI.Models
 {
     public class Region
     {
@@ -8,5 +9,6 @@ namespace RegionLoader
         public string Name { get; set; }
         public int AU12 { get; set; }
         public DbGeography Polygon { get; set; }
+        public virtual ICollection<SentimentStuff> Sentiments { get; set; }
     }
 }
