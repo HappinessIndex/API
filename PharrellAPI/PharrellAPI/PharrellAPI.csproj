@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201505280346537_region-loader.Designer.cs">
       <DependentUpon>201505280346537_region-loader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505280421064_SentimentValue.cs" />
+    <Compile Include="Migrations\201505280421064_SentimentValue.Designer.cs">
+      <DependentUpon>201505280421064_SentimentValue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SentimentStuff.cs" />
     <Compile Include="Models\StoreTweets.cs" />
@@ -258,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505280346537_region-loader.resx">
       <DependentUpon>201505280346537_region-loader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505280421064_SentimentValue.resx">
+      <DependentUpon>201505280421064_SentimentValue.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
