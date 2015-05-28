@@ -15,7 +15,7 @@ namespace PharrellAPI.Controllers
             var targeturi = "https://community-sentiment.p.mashape.com/text/";
             var client = new HttpClient();
 
-            foreach (var tweet in db.Tweets.Take(10))
+            foreach (var tweet in db.Tweets.Take(30))
             {
                 HttpContent content = new FormUrlEncodedContent(new[]
             {
