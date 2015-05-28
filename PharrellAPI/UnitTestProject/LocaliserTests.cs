@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using Localiser;
+using SpatialHelpers;
 using NUnit.Framework;
 using PharrellAPI;
 using RegionLoader;
@@ -10,13 +10,13 @@ namespace UnitTestProject
     [TestFixture]
     public class LocaliserTests
     {
-        public SpatialHelper Sut { get; set; }
+        public Localiser Sut { get; set; }
 
         [SetUp]
         public void Init()
         {
             // Arrange
-            Sut = new SpatialHelper();            
+            Sut = new Localiser();            
         }
 
         [Test]

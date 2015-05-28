@@ -134,9 +134,9 @@
       <Project>{882fe910-6a39-4153-947d-8853b9c7c6c4}</Project>
       <Name>InterfacesAndPOCOs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Localiser\Localiser.csproj">
+    <ProjectReference Include="..\Localiser\SpatialHelpers.csproj">
       <Project>{2261ab78-462c-4724-87b4-3bcc39225618}</Project>
-      <Name>Localiser</Name>
+      <Name>SpatialHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="..\OAuthHelper\OAuthHelper.csproj">
       <Project>{2bb58c3b-152b-4ae5-85c6-d8db5943e61d}</Project>

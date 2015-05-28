@@ -2,9 +2,9 @@
 using Microsoft.SqlServer.Types;
 using RegionLoader;
 
-namespace Localiser
+namespace SpatialHelpers
 {
-    public class SpatialHelper
+    public class Localiser
     {
         public bool PointInPolygon(Region region, double latitude, double longitude)
         {
