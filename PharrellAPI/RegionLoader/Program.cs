@@ -15,7 +15,7 @@ namespace RegionLoader
             var db = new RegionDbContext();
             Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
 
-            using (TextReader textReader = File.OpenText(@"c:\Users\Rich\wellington4326.csv"))
+            using (TextReader textReader = File.OpenText(@"..\..\wellington4326.csv"))
             {
                 var csv = new CsvReader(textReader);
                 while (csv.Read())
