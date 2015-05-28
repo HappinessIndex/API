@@ -208,6 +208,10 @@
     <Compile Include="Migrations\201505280225381_init.Designer.cs">
       <DependentUpon>201505280225381_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505280304001_ForeignKey.cs" />
+    <Compile Include="Migrations\201505280304001_ForeignKey.Designer.cs">
+      <DependentUpon>201505280304001_ForeignKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SentimentStuff.cs" />
     <Compile Include="Models\StoreTweets.cs" />
@@ -247,6 +251,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201505280225381_init.resx">
       <DependentUpon>201505280225381_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505280304001_ForeignKey.resx">
+      <DependentUpon>201505280304001_ForeignKey.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

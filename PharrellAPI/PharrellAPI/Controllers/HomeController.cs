@@ -29,9 +29,12 @@ namespace PharrellAPI.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     Sentiment respContent = response.Content.ReadAsAsync<Sentiment>().Result;
+                    respContent.result.TweetId = tweet;
                     db.Results.Add(respContent.result);
+                    
                 }
             }
+
             db.SaveChanges();
         }
     }
