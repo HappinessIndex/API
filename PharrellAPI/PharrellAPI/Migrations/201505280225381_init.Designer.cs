@@ -7,13 +7,13 @@ namespace PharrellAPI.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class Added_TweetID : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Added_TweetID));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201505270432313_Added_TweetID"; }
+            get { return "201505280225381_init"; }
         }
         
         string IMigrationMetadata.Source

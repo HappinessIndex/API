@@ -7,20 +7,20 @@ using TweetinviProvider;
 
 namespace UnitTestProject
 {
-    //[TestFixture]
-    //public class TweetInviProviderGetTweets
-    //{
-    //    [Test]
-    //    public void TestMethod1()
-    //    {
-    //        //arrange 
-    //        TweetinviFacade tweetFacade = new TweetinviFacade();
-    //        //act
-    //        tweetFacade.GetTweets();
+    [TestFixture]
+    public class TweetInviProviderGetTweets
+    {
+        [Test]
+        public void TestMethod1()
+        {
+            //arrange 
+            TweetinviFacade tweetFacade = new TweetinviFacade();
+            //act
+            tweetFacade.GetTweets();
 
-    //        //assert
-    //    }
-    //}
+            //assert
+        }
+    }
 
     [TestFixture]
     public class PharellAPItests

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using InterfacesAndPOCOs;
 using Newtonsoft.Json;
+using PharrellAPI.Models;
 
 namespace PharrellAPI.Models
 {

@@ -204,33 +204,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HiDbContext.cs" />
-    <Compile Include="Migrations\201505270336422_tweet_Init.cs" />
-    <Compile Include="Migrations\201505270336422_tweet_Init.Designer.cs">
-      <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505270432313_Added_TweetID.cs" />
-    <Compile Include="Migrations\201505270432313_Added_TweetID.Designer.cs">
-      <DependentUpon>201505270432313_Added_TweetID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505270813038_Having_a_go.cs" />
-    <Compile Include="Migrations\201505270813038_Having_a_go.Designer.cs">
-      <DependentUpon>201505270813038_Having_a_go.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505270813512_Having_a_go_again.cs" />
-    <Compile Include="Migrations\201505270813512_Having_a_go_again.Designer.cs">
-      <DependentUpon>201505270813512_Having_a_go_again.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505270817473_Having_a_go_again1.cs" />
-    <Compile Include="Migrations\201505270817473_Having_a_go_again1.Designer.cs">
-      <DependentUpon>201505270817473_Having_a_go_again1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505272231594_Results.cs" />
-    <Compile Include="Migrations\201505272231594_Results.Designer.cs">
-      <DependentUpon>201505272231594_Results.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201505280152236_ForeignKey.cs" />
-    <Compile Include="Migrations\201505280152236_ForeignKey.Designer.cs">
-      <DependentUpon>201505280152236_ForeignKey.cs</DependentUpon>
+    <Compile Include="Migrations\201505280225381_init.cs" />
+    <Compile Include="Migrations\201505280225381_init.Designer.cs">
+      <DependentUpon>201505280225381_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SentimentStuff.cs" />
@@ -269,26 +245,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201505270336422_tweet_Init.resx">
-      <DependentUpon>201505270336422_tweet_Init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505270432313_Added_TweetID.resx">
-      <DependentUpon>201505270432313_Added_TweetID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505270813038_Having_a_go.resx">
-      <DependentUpon>201505270813038_Having_a_go.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505270813512_Having_a_go_again.resx">
-      <DependentUpon>201505270813512_Having_a_go_again.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505270817473_Having_a_go_again1.resx">
-      <DependentUpon>201505270817473_Having_a_go_again1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505272231594_Results.resx">
-      <DependentUpon>201505272231594_Results.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201505280152236_ForeignKey.resx">
-      <DependentUpon>201505280152236_ForeignKey.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505280225381_init.resx">
+      <DependentUpon>201505280225381_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
