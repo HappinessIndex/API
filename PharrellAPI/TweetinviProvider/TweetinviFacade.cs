@@ -23,7 +23,7 @@ namespace TweetinviProvider
             var searchParameter = Search.CreateTweetSearchParameter("");
             searchParameter.SetGeoCode(174.77624,-41.28646, 35, DistanceMeasure.Kilometers);
             searchParameter.Lang = Language.English;
-            searchParameter.MaximumNumberOfResults = 2000;
+            searchParameter.MaximumNumberOfResults = 20000;
             //searchParameter.MaxId = maxTweetID + 1;
             //searchParameter.SinceId = maxTweetID;
             var tweets = Search.SearchTweets(searchParameter);

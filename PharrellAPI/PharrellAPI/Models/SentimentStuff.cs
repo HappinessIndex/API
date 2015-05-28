@@ -23,6 +23,8 @@ namespace PharrellAPI.Models
         public float confidence { get; set; }
         public string sentiment { get; set; }
         [JsonIgnore]
+        public int SentimentValue { get; set; }
+        [JsonIgnore]
         public Tweet TweetId { get; set; }
         
     }
