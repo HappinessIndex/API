@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
+using PharrellAPI.Controllers;
 using PharrellAPI.Models;
 using TweetinviProvider;
 
@@ -31,6 +32,21 @@ namespace UnitTestProject
             StoreTweets storeTweets = new StoreTweets();
             //act
             storeTweets.SaveTweetsToDb();
+            
+            //assert
+        }
+    }
+
+    [TestFixture]
+    public class PharellAPItestsSentiment
+    {
+        [Test]
+        public void SentimentTest()
+        {
+            //arrange 
+            HomeController homeController = new HomeController();
+            //act
+            homeController.SentimentCall();
 
             //assert
         }

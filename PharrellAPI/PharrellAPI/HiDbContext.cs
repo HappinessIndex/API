@@ -1,4 +1,5 @@
 using InterfacesAndPOCOs;
+using PharrellAPI.Models;
 
 namespace PharrellAPI
 {
@@ -23,6 +24,8 @@ namespace PharrellAPI
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Tweet> Tweets { get; set; }
+        public virtual DbSet<SentimentStuff> SentimentStuffs { get; set; }
+        public virtual DbSet<Result> Results { get; set; }
     }
 
     //public class MyEntity

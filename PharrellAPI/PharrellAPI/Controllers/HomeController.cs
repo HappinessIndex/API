@@ -1,30 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web.Mvc;
+using PharrellAPI.Models;
 
 namespace PharrellAPI.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public void SentimentCall()
         {
-            return View();
-        }
+            HiDbContext db = new HiDbContext();
+            var targeturi = "https://community-sentiment.p.mashape.com/text/";
+            var client = new HttpClient();
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            foreach (var tweet in db.Tweets.Take(20))
+            {
+                HttpContent content = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("txt", tweet.Content),
+            });
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
+                content.Headers.Add("X-Mashape-Key", "g482YWPyg5mshIeQkyGfhTJAPvt2p17khJgjsnnHQQag0P04Zm");
 
-            return View();
-        }
+                var response = client.PostAsync(targeturi, content).Result;
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+                if (response.IsSuccessStatusCode)
+                {
+                    Sentiment respContent = response.Content.ReadAsAsync<Sentiment>().Result;
+                    db.Results.Add(respContent.result);
+                }
+            }
+            db.SaveChanges();
         }
     }
 }

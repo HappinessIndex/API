@@ -169,6 +169,10 @@
       <HintPath>..\packages\TweetinviAPI.0.9.7.1\lib\Tweetinvi.WebLogic.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="unirest-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unirest-Net.1.0.0-beta\lib\unirest-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -208,7 +212,28 @@
     <Compile Include="Migrations\201505270432313_Added_TweetID.Designer.cs">
       <DependentUpon>201505270432313_Added_TweetID.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505270813038_Having_a_go.cs" />
+    <Compile Include="Migrations\201505270813038_Having_a_go.Designer.cs">
+      <DependentUpon>201505270813038_Having_a_go.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505270813512_Having_a_go_again.cs" />
+    <Compile Include="Migrations\201505270813512_Having_a_go_again.Designer.cs">
+      <DependentUpon>201505270813512_Having_a_go_again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505270817473_Having_a_go_again1.cs" />
+    <Compile Include="Migrations\201505270817473_Having_a_go_again1.Designer.cs">
+      <DependentUpon>201505270817473_Having_a_go_again1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505272231594_Results.cs" />
+    <Compile Include="Migrations\201505272231594_Results.Designer.cs">
+      <DependentUpon>201505272231594_Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505280152236_ForeignKey.cs" />
+    <Compile Include="Migrations\201505280152236_ForeignKey.Designer.cs">
+      <DependentUpon>201505280152236_ForeignKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\SentimentStuff.cs" />
     <Compile Include="Models\StoreTweets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -249,6 +274,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505270432313_Added_TweetID.resx">
       <DependentUpon>201505270432313_Added_TweetID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505270813038_Having_a_go.resx">
+      <DependentUpon>201505270813038_Having_a_go.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505270813512_Having_a_go_again.resx">
+      <DependentUpon>201505270813512_Having_a_go_again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505270817473_Having_a_go_again1.resx">
+      <DependentUpon>201505270817473_Having_a_go_again1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505272231594_Results.resx">
+      <DependentUpon>201505272231594_Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505280152236_ForeignKey.resx">
+      <DependentUpon>201505280152236_ForeignKey.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
