@@ -1,5 +1,6 @@
 using InterfacesAndPOCOs;
 using PharrellAPI.Models;
+using RegionLoader;
 
 namespace PharrellAPI
 {
@@ -26,6 +27,7 @@ namespace PharrellAPI
         public virtual DbSet<Tweet> Tweets { get; set; }
         public virtual DbSet<SentimentStuff> SentimentStuffs { get; set; }
         public virtual DbSet<Result> Results { get; set; }
+        public virtual DbSet<Region> Regions { get; set; }
     }
 
     //public class MyEntity

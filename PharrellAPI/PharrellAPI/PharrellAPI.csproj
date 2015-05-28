@@ -235,6 +235,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\RegionLoader\RegionLoader\RegionLoader.csproj">
+      <Project>{432839a2-fc65-471d-aceb-3faf80e000f5}</Project>
+      <Name>RegionLoader</Name>
+    </ProjectReference>
     <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
       <Project>{882FE910-6A39-4153-947D-8853B9C7C6C4}</Project>
       <Name>InterfacesAndPOCOs</Name>
