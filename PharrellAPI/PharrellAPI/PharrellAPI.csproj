@@ -235,10 +235,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\RegionLoader\RegionLoader\RegionLoader.csproj">
-      <Project>{432839a2-fc65-471d-aceb-3faf80e000f5}</Project>
-      <Name>RegionLoader</Name>
-    </ProjectReference>
     <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
       <Project>{882FE910-6A39-4153-947D-8853B9C7C6C4}</Project>
       <Name>InterfacesAndPOCOs</Name>
@@ -246,6 +242,10 @@
     <ProjectReference Include="..\OAuthHelper\OAuthHelper.csproj">
       <Project>{2bb58c3b-152b-4ae5-85c6-d8db5943e61d}</Project>
       <Name>OAuthHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegionLoader\RegionLoader.csproj">
+      <Project>{432839a2-fc65-471d-aceb-3faf80e000f5}</Project>
+      <Name>RegionLoader</Name>
     </ProjectReference>
     <ProjectReference Include="..\TweetinviProvider\TweetinviProvider.csproj">
       <Project>{60c2299e-c792-45ff-9e03-8b76814099c7}</Project>
