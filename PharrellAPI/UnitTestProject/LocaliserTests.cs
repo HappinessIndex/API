@@ -96,10 +96,10 @@ namespace UnitTestProject
             Assert.That(regionType.GetProperty("Results"), Is.Not.Null);
         }
 
-        [Test]
-        public void Populate_RegionId()
-        {
-            _sut.UpdateRegions();
-        }
+        //[Test]
+        //public void Populate_RegionId()
+        //{
+        //    _sut.UpdateRegions();
+        //}
     }
 }
