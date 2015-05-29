@@ -46,8 +46,8 @@ namespace UnitTestProject
         {
             // Arrange
             Region willisStreet = _db.Regions.Single(r => r.AU12 == 573101);
-            double tePapaLat = 174.781982;
-            double tePapaLong = -41.290272;
+            double tePapaLat = -41.290272;
+            double tePapaLong = 174.781982;
             bool expected = true;
 
             // Act
@@ -62,8 +62,8 @@ namespace UnitTestProject
         {
             // Arrange
             Region willisStreet = _db.Regions.Single(r => r.AU12 == 573101);
-            double eiffelTowerLat = 2.2945;
-            double eiffelTowerLong = 48.8582;
+            double eiffelTowerLat = 48.8582;
+            double eiffelTowerLong = 2.2945;
             bool expected = false;
 
             // Act
@@ -78,8 +78,8 @@ namespace UnitTestProject
         {
             // Arrange
             Region kelburn = _db.Regions.Single(r => r.AU12 == 575300);
-            double beehiveLat = 174.7767;
-            double beehiveLong = -41.2784;
+            double beehiveLat = -41.2784;
+            double beehiveLong = 174.7767;
             bool expected = false;
 
             // Act
@@ -90,10 +90,16 @@ namespace UnitTestProject
         }
 
         [Test]
-        public void Region_HAS_MANY_Sentiments()
+        public void Region_HAS_MANY_Results()
         {
             var regionType = typeof (Region);
-            Assert.That(regionType.GetProperty("Sentiments"), Is.Not.Null);
+            Assert.That(regionType.GetProperty("Results"), Is.Not.Null);
+        }
+
+        [Test]
+        public void Populate_RegionId()
+        {
+            _sut.UpdateRegions();
         }
     }
 }

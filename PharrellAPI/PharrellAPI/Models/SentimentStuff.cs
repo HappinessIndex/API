@@ -19,8 +19,7 @@ namespace PharrellAPI.Models
         [JsonIgnore]
         public int SentimentValue { get; set; }
         [JsonIgnore]
-        public Tweet TweetId { get; set; }
-        
+        public virtual Tweet Tweet { get; set; }
     }
 
     public class Sentiment

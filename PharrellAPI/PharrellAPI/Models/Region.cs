@@ -9,6 +9,6 @@ namespace PharrellAPI.Models
         public string Name { get; set; }
         public int AU12 { get; set; }
         public DbGeography Polygon { get; set; }
-        public virtual ICollection<SentimentStuff> Sentiments { get; set; }
+        public virtual ICollection<Result> Results { get; set; }
     }
 }

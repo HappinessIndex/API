@@ -78,7 +78,7 @@ namespace PharrellAPI.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     Sentiment respContent = response.Content.ReadAsAsync<Sentiment>().Result;
-                    respContent.result.TweetId = tweet;
+                    respContent.result.Tweet = tweet;
                     respContent.result.SentimentValue = sentimentValue(respContent.result.confidence, respContent.result.sentiment);
                     db.Results.Add(respContent.result);
                     

@@ -224,6 +224,14 @@
     <Compile Include="Migrations\201505280915380_region-has-many-sentiments.Designer.cs">
       <DependentUpon>201505280915380_region-has-many-sentiments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201505281041262_shift-foreign-key.cs" />
+    <Compile Include="Migrations\201505281041262_shift-foreign-key.Designer.cs">
+      <DependentUpon>201505281041262_shift-foreign-key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505282251398_virtualise-tweet.cs" />
+    <Compile Include="Migrations\201505282251398_virtualise-tweet.Designer.cs">
+      <DependentUpon>201505282251398_virtualise-tweet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SentimentStuff.cs" />
     <Compile Include="Models\StoreTweets.cs" />
@@ -287,6 +295,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505280915380_region-has-many-sentiments.resx">
       <DependentUpon>201505280915380_region-has-many-sentiments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505281041262_shift-foreign-key.resx">
+      <DependentUpon>201505281041262_shift-foreign-key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505282251398_virtualise-tweet.resx">
+      <DependentUpon>201505282251398_virtualise-tweet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
