@@ -1,19 +1,45 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace PharrellAPI.Controllers
 {
     public class HappinessController : ApiController
     {
-        HiDbContext db = new HiDbContext();
+        private HiDbContext _db = new HiDbContext();
+
         // GET: api/Happiness
-        public IHttpActionResult Get()
+        public async Task<IHttpActionResult> Get()
         {
-            return Ok(db.Tweets);
+            List<ApiFeature> features = new List<ApiFeature>();
+            foreach (var region in _db.Regions)
+            {
+                var index = 0;
+                if (region.Results.Count > 0)
+                {
+                    index = (int) Math.Floor(region.Results.Average(r => r.SentimentValue));
+                }
+                features.Add(new ApiFeature
+                {
+                    type = "Feature",
+                    id = region.Id,
+                    properties = new ApiProperties
+                    {
+                        AU12 = region.AU12,
+                        happinessIndex = index,
+                    },
+                    geometry = new ApiGeometry
+                    {
+                        type = "Polygon",
+                        coordinates = region.Polygon,
+                    }
+                });
+            }
+
+            return Ok(new ApiFeatureCollection {type = "FeatureCollection", features = features});
         }
 
         //// GET: api/Happiness/5
