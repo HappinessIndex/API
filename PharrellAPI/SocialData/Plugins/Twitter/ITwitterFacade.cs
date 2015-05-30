@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace InterfacesAndPOCOs
+namespace SocialData.Plugins.Twitter
 {
     public interface ITwitterFacade
     {

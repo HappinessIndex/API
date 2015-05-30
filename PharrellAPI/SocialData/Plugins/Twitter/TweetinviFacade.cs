@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Data.Entity.Spatial;
 using System.Linq;
 using System.Web.Configuration;
-using InterfacesAndPOCOs;
+using SocialData.Plugins.Twitter;
 using Tweetinvi;
 using Tweetinvi.Core.Enum;
-using Tweet = InterfacesAndPOCOs.Tweet;
+using Tweet = SocialData.Plugins.Twitter.Tweet;
 
 
-namespace TweetinviProvider
+namespace SocialData.Plugins
 {
     public class TweetinviFacade : ITwitterFacade
     {
