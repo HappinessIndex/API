@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Data.Entity.Spatial;
-using SocialData.Plugins.Twitter;
+using Interfaces;
 
-
-namespace PharrellAPI.Models
+namespace Spatial
 {
     public class Region
     {
@@ -11,6 +10,6 @@ namespace PharrellAPI.Models
         public string Name { get; set; }
         public int AU12 { get; set; }
         public DbGeography Polygon { get; set; }
-        public virtual ICollection<Tweet> Results { get; set; }
+        public virtual ICollection<ISocialDatum> SocialData { get; set; }
     }
 }

@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Localiser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,17 +101,9 @@
     <Content Include="SqlServerTypes\readme.htm" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
-      <Project>{882FE910-6A39-4153-947D-8853B9C7C6C4}</Project>
-      <Name>InterfacesAndPOCOs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PharrellAPI\PharrellAPI.csproj">
-      <Project>{3e0f4aa5-3cb7-475f-b58c-e6772898d146}</Project>
-      <Name>PharrellAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RegionLoader\RegionLoader.csproj">
-      <Project>{432839a2-fc65-471d-aceb-3faf80e000f5}</Project>
-      <Name>RegionLoader</Name>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{a75cb2f3-b838-43d9-b130-25ec9bea301c}</Project>
+      <Name>Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

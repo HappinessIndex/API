@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using PharrellAPI;
+using SocialData.Plugins.Twitter;
 
 namespace HappinessIndex
 {

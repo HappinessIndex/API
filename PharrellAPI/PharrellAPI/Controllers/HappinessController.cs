@@ -18,9 +18,9 @@ namespace PharrellAPI.Controllers
             foreach (var region in _db.Regions)
             {
                 var index = 0;
-                if (region.Results.Count > 0)
+                if (region.Tweets.Any())
                 {
-                    index = (int) Math.Floor(region.Results.Average(r => r.SentimentValue));
+                    index = (int) Math.Floor(region.Tweets.Average(t => t.HappinessIndex));
                 }
                 features.Add(new ApiFeature
                 {

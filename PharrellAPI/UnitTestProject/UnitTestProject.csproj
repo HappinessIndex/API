@@ -131,13 +131,9 @@
       <Project>{0837885b-9f3c-4440-aa8f-4ea5ba4c1e57}</Project>
       <Name>HappinessIndex</Name>
     </ProjectReference>
-    <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
-      <Project>{882fe910-6a39-4153-947d-8853b9c7c6c4}</Project>
-      <Name>InterfacesAndPOCOs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Localiser\SpatialHelpers.csproj">
+    <ProjectReference Include="..\Localiser\Spatial.csproj">
       <Project>{2261ab78-462c-4724-87b4-3bcc39225618}</Project>
-      <Name>SpatialHelpers</Name>
+      <Name>Spatial</Name>
     </ProjectReference>
     <ProjectReference Include="..\PharrellAPI\PharrellAPI.csproj">
       <Project>{3e0f4aa5-3cb7-475f-b58c-e6772898d146}</Project>

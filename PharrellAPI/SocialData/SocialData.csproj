@@ -100,23 +100,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Plugins\TweetinviFacade.cs" />
-    <Compile Include="Plugins\Twitter.cs" />
+    <Compile Include="Plugins\Twitter\Tweet.cs" />
+    <Compile Include="Plugins\Twitter\Twitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
-      <Project>{882fe910-6a39-4153-947d-8853b9c7c6c4}</Project>
-      <Name>InterfacesAndPOCOs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PharrellAPI\PharrellAPI.csproj">
-      <Project>{3e0f4aa5-3cb7-475f-b58c-e6772898d146}</Project>
-      <Name>PharrellAPI</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{a75cb2f3-b838-43d9-b130-25ec9bea301c}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Localiser\Spatial.csproj">
+      <Project>{2261ab78-462c-4724-87b4-3bcc39225618}</Project>
+      <Name>Spatial</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

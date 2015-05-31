@@ -1,7 +1,7 @@
-using InterfacesAndPOCOs;
 using PharrellAPI.Models;
+using SocialData.Plugins.Twitter;
 
-namespace PharrellAPI
+namespace Store
 {
     using System.Data.Entity;
 

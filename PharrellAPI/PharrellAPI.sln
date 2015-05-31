@@ -1,21 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharrellAPI", "PharrellAPI\PharrellAPI.csproj", "{3E0F4AA5-3CB7-475F-B58C-E6772898D146}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialData", "SocialData\SocialData.csproj", "{3F59D83B-F14C-4EDA-AD70-3A5C93485B7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpatialHelpers", "Localiser\SpatialHelpers.csproj", "{2261AB78-462C-4724-87B4-3BCC39225618}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spatial", "Localiser\Spatial.csproj", "{2261AB78-462C-4724-87B4-3BCC39225618}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappinessIndex", "HappinessIndex\HappinessIndex.csproj", "{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesAndPOCOs", "InterfacesAndPOCOs\InterfacesAndPOCOs.csproj", "{882FE910-6A39-4153-947D-8853B9C7C6C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{443AA500-741B-45CC-BF35-90A7B17335C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegionLoader", "RegionLoader\RegionLoader.csproj", "{432839A2-FC65-471D-ACEB-3FAF80E000F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A75CB2F3-B838-43D9-B130-25EC9BEA301C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +39,6 @@ Global
 		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0837885B-9F3C-4440-AA8F-4EA5BA4C1E57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{882FE910-6A39-4153-947D-8853B9C7C6C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{882FE910-6A39-4153-947D-8853B9C7C6C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{882FE910-6A39-4153-947D-8853B9C7C6C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{882FE910-6A39-4153-947D-8853B9C7C6C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{443AA500-741B-45CC-BF35-90A7B17335C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{443AA500-741B-45CC-BF35-90A7B17335C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{443AA500-741B-45CC-BF35-90A7B17335C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{432839A2-FC65-471D-ACEB-3FAF80E000F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{432839A2-FC65-471D-ACEB-3FAF80E000F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{432839A2-FC65-471D-ACEB-3FAF80E000F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A75CB2F3-B838-43D9-B130-25EC9BEA301C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75CB2F3-B838-43D9-B130-25EC9BEA301C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75CB2F3-B838-43D9-B130-25EC9BEA301C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75CB2F3-B838-43D9-B130-25EC9BEA301C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

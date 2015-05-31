@@ -81,13 +81,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InterfacesAndPOCOs\InterfacesAndPOCOs.csproj">
-      <Project>{882fe910-6a39-4153-947d-8853b9c7c6c4}</Project>
-      <Name>InterfacesAndPOCOs</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PharrellAPI\PharrellAPI.csproj">
       <Project>{3e0f4aa5-3cb7-475f-b58c-e6772898d146}</Project>
       <Name>PharrellAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SocialData\SocialData.csproj">
+      <Project>{3f59d83b-f14c-4eda-ad70-3a5c93485b7c}</Project>
+      <Name>SocialData</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
